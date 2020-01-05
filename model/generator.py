@@ -63,6 +63,8 @@ class Generator(nn.Module):
                     layer.remove_weight_norm()
 
     def inference(self, mel):
+        print('>>> MEL SIZE:')
+        print(mel.shape)
         hop_length = 256
         # pad input mel with zeros to cut artifact
         # see https://github.com/seungwonpark/melgan/issues/8
@@ -80,7 +82,7 @@ class Generator(nn.Module):
 
 
 '''
-    to run this, fix 
+    to run this, fix
     from . import ResStack
     into
     from res_stack import ResStack

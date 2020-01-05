@@ -1,6 +1,6 @@
 data: # root path of train/validation data (either relative/absoulte path is ok)
-  train: ''
-  validation: ''
+  train: '/home/bt/datasets/melgan_training/training'
+  validation: '/home/bt/datasets/melgan_training/validation'
 ---
 train:
   rep_discriminator: 1
