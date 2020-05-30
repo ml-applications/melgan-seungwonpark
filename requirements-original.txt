@@ -1,0 +1,9 @@
+librosa
+matplotlib
+numpy
+scipy
+tensorboardX
+torch==1.0.1.post2
+tqdm
+pillow
+pyyaml

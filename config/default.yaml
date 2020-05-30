@@ -1,6 +1,8 @@
 data: # root path of train/validation data (either relative/absoulte path is ok)
-  train: '/home/bt/datasets/melgan_transfer_learning/training'
-  validation: '/home/bt/datasets/melgan_transfer_learning/validation'
+  #train: '/home/bt/datasets/melgan_transfer_high_pitch/training'
+  #validation: '/home/bt/datasets/melgan_transfer_high_pitch/validation'
+  train: '/home/bt/datasets/voicecurator_training/wav/training'
+  validation: '/home/bt/datasets/voicecurator_training/wav/validation'
 ---
 train:
   rep_discriminator: 1
