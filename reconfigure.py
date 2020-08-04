@@ -28,7 +28,9 @@ def main():
 
   print('Speaker directory: {}'.format(args.speaker_dir))
 
-  speaker_dir = os.path.join(DEFAULT_DATA_DIRECTORY, args.speaker_dir)
+  speaker_dir = 'melgan_{}'.format(args.speaker_dir)
+  speaker_dir = os.path.join(DEFAULT_DATA_DIRECTORY, speaker_dir)
+
   training_directory = os.path.join(speaker_dir, 'training')
   validation_directory = os.path.join(speaker_dir, 'validation')
 
