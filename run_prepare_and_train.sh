@@ -12,6 +12,16 @@ fi
 data_path="/home/ubuntu/data/melgan_${model_name}/"
 existing_checkpoint="/home/ubuntu/data/melgan_checkpoint.pt"
 
+if [ ! -d "$data_path" ]; then
+  echo "Training directory does not exist: ${data_path}"
+  exit
+fi
+
+if [ ! -f "$existing_checkpoint" ]; then
+  echo "Previous checkpoint does not exist: ${existing_checkpoint}"
+  exit
+fi
+
 # use venv context
 source python/bin/activate
 
