@@ -112,8 +112,11 @@ tensorflow-estimator==1.14.0
 tensorflow-gpu==1.14.0
 termcolor==1.1.0
 toml==0.10.0
-torch==1.0.1.post2
-torchvision==0.2.1
+# NB(2020-09-15): Torch 1.0.1.post2 not available on LambdaLabs gpu.2x.rtx6000
+#torch==1.0.1.post2
+#torchvision==0.2.1
+torch==1.2.0
+torchvision==0.4.0
 tqdm==4.31.1
 ubuntu-drivers-common==0.0.0
 ufw==0.35
